@@ -63,10 +63,10 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-   spec.platform     = :ios, "11.0"
+   spec.platform     = :ios
 
   #  When using multiple platforms
-   #spec.ios.deployment_target = "11.0"
+   spec.ios.deployment_target = "11.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
@@ -79,9 +79,9 @@ Pod::Spec.new do |spec|
   #
 
   #spec.source       = { :git => "http://EXAMPLE/SCGateway.git", :tag => "#{spec.version}" }
-  spec.source = { :git => "https://gitlab.com/smallcase/mobile/scgateway-ios.git" , :tag => "AmoRelease-1"}
-  #spec.ios.vendored_framework = 'Archive/SCGateway.framework'
-  #spec.source ={ :http => "https://gateway.smallcase.com/scdk_ios/1.0.0/SCGateway.framework.zip"}
+  #spec.source = { :git => "https://gitlab.com/smallcase/mobile/scgateway-ios.git" , :tag => "AmoRelease-1"}
+  spec.ios.vendored_framework = 'Archive/SCGateway.framework'
+  spec.source ={ :http => "https://gateway.smallcase.com/scdk_ios/2.0.0/SCGateway.framework.zip"}
   #https://gateway.smallcase.com/scdk-ios/1.0.0/SCGateway.framework.zip
   #"https://gitlab.com/dipanjan.jana/dummy/uploads/04b1eb4052706112d6ef533a1edbe330/Archive.zip"
   
@@ -98,13 +98,13 @@ Pod::Spec.new do |spec|
 
   
 
-  spec.source_files  = "SCGateway/**/*.{h,m,swift}"
+  #spec.source_files  = "SCGateway/**/*.{h,m,swift}"
   
   
   
 
   #spec.exclude_files = "Classes/Exclude"
-  spec.swift_version = "5.2.0"
+  #spec.swift_version = "5.2.0"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -118,7 +118,7 @@ Pod::Spec.new do |spec|
   #
  
   
-   spec.resources = "SCGateway/**/*.{gif,ttf,xcassets}"
+   #spec.resources = "SCGateway/**/*.{gif,ttf,xcassets}"
 
    #spec.preserve_paths = "SCGateway/**/*.ttf"
 
