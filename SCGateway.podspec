@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
   $spec.version = 0	
   spec.name         = "SCGateway"
-  spec.version      =  #{$spec.version}
+  spec.version      = "#{$spec.version}"
   spec.summary      = "A short description of SCGateway."
 
   # This description is used to generate tags and improve search results.
