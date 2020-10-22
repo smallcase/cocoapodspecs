@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
   #version = $SPEC_VERSION	
-  
+  envman add --key version --value "$SPEC_VERSION"
   spec.name         = "SCGateway"
   spec.version      = "#{version}"
   spec.summary      = "A short description of SCGateway."
