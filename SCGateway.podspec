@@ -14,9 +14,9 @@ Pod::Spec.new do |spec|
   #  can feel like a chore to fill in it's definitely to your advantage. The
   #  summary should be tweet-length, and the description more in depth.
   #
-
+  $spec.version = 0	
   spec.name         = "SCGateway"
-  spec.version      = "0.0.2"
+  spec.version      =  #{$spec.version}
   spec.summary      = "A short description of SCGateway."
 
   # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ Pod::Spec.new do |spec|
   #spec.source       = { :git => "http://EXAMPLE/SCGateway.git", :tag => "#{spec.version}" }
   #spec.source = { :git => "https://gitlab.com/smallcase/mobile/scgateway-ios.git" , :tag => "AmoRelease-1"}
   spec.ios.vendored_framework = 'Archive/SCGateway.framework'
-  spec.source ={ :http => "https://gateway.smallcase.com/scdk_ios/2.0.0/SCGateway.framework.zip"}
+  spec.source ={ :http => "https://gateway.smallcase.com/scdk_ios/#{$spec.version}/SCGateway.framework.zip"}
   #https://gateway.smallcase.com/scdk-ios/1.0.0/SCGateway.framework.zip
   #"https://gitlab.com/dipanjan.jana/dummy/uploads/04b1eb4052706112d6ef533a1edbe330/Archive.zip"
   
@@ -148,3 +148,4 @@ Pod::Spec.new do |spec|
   # spec.dependency "JSONKit", "~> 1.4"
 
 end
+
