@@ -82,12 +82,8 @@ Pod::Spec.new do |spec|
   #spec.source = { :git => "https://gitlab.com/smallcase/mobile/scgateway-ios.git" , :tag => "AmoRelease-1"}
   spec.source ={ :http => "https://gateway.smallcase.com/scdk_ios/2.1.9/SCGateway.xcframework.zip"}
   spec.requires_arc = true
-  spec.default_subspecs = 'XCFRAMEWORK'
-
-  spec.subspec 'XCFRAMEWORK' do |ss|
-    ss.ios.vendored_frameworks = 'Archive/SCGateway.xcframework'
-    ss.preserve_paths = 'Archive/SCGateway.xcframework'
-  end
+  spec.ios.vendored_frameworks = 'Archive/SCGateway.xcframework'
+  spec.preserve_paths = 'Archive/SCGateway.xcframework'
   #https://gateway.smallcase.com/scdk-ios/1.0.0/SCGateway.framework.zip
   #"https://gitlab.com/dipanjan.jana/dummy/uploads/04b1eb4052706112d6ef533a1edbe330/Archive.zip"
   
