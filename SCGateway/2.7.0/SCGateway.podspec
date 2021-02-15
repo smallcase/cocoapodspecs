@@ -14,11 +14,9 @@ Pod::Spec.new do |spec|
   #  can feel like a chore to fill in it's definitely to your advantage. The
   #  summary should be tweet-length, and the description more in depth.
   #
-  #version = $SPEC_VERSION	
-  #envman add --key version --value "#{SPEC_VERSION}"
-  version = ENV['SPEC_VERSION']
+
   spec.name         = "SCGateway"
-  spec.version      = "#{version}"
+  spec.version      = "2.7.0"
   spec.summary      = "A short description of SCGateway."
 
   # This description is used to generate tags and improve search results.
@@ -26,7 +24,7 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "A complete description of the project"
+  spec.description  = "A complete description of the pod"
 
   spec.homepage     = "http://EXAMPLE/SCGateway"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -82,8 +80,8 @@ Pod::Spec.new do |spec|
 
   #spec.source       = { :git => "http://EXAMPLE/SCGateway.git", :tag => "#{spec.version}" }
   #spec.source = { :git => "https://gitlab.com/smallcase/mobile/scgateway-ios.git" , :tag => "AmoRelease-1"}
-  spec.ios.vendored_framework = 'Archive/SCGateway.framework'
-  spec.source ={ :http => "https://gateway.smallcase.com/scdk_ios/#{version}/SCGateway.framework.zip"}
+  spec.source ={ :http => "https://gateway.smallcase.com/scdk_ios/2.7.0/SCGateway.framework.zip"}
+  spec.ios.vendored_frameworks = 'Archive/SCGateway.framework'
   #https://gateway.smallcase.com/scdk-ios/1.0.0/SCGateway.framework.zip
   #"https://gitlab.com/dipanjan.jana/dummy/uploads/04b1eb4052706112d6ef533a1edbe330/Archive.zip"
   
@@ -150,4 +148,3 @@ Pod::Spec.new do |spec|
   # spec.dependency "JSONKit", "~> 1.4"
 
 end
-
