@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
   #version = $SPEC_VERSION	
   #envman add --key version --value "#{SPEC_VERSION}"
-  version = ENV['SPEC_VERSION']
+  version = sdkversion
   spec.name         = "SCGateway"
   spec.version      = "#{version}"
   spec.summary      = "A short description of SCGateway."
