@@ -68,7 +68,7 @@ Pod::Spec.new do |spec|
    spec.platform     = :ios
 
   #  When using multiple platforms
-   spec.ios.deployment_target = "14.0"
+   spec.ios.deployment_target = "11.0"
    spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
    spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   # spec.osx.deployment_target = "10.7"
