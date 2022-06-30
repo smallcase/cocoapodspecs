@@ -149,7 +149,7 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  spec.dependency "Mixpanel-swift"
+  # spec.dependency "Mixpanel-swift"
 
 end
 
