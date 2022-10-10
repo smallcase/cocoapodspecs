@@ -83,7 +83,7 @@ Pod::Spec.new do |spec|
   #spec.source       = { :git => "http://EXAMPLE/SCGateway.git", :tag => "#{spec.version}" }
   #spec.source = { :git => "https://gitlab.com/smallcase/mobile/scgateway-ios.git" , :tag => "AmoRelease-1"}
   spec.vendored_framework = 'SCGateway.xcframework'
-  spec.source ={ :http => "https://gateway.smallcase.com/scdk_ios_xcode_12/3.4.5/SCGateway.xcframework.zip"}
+  spec.source ={ :http => "https://gateway.smallcase.com/scdk_ios_xcode_12/3.4.8/SCGateway.xcframework.zip"}
   #https://gateway.smallcase.com/scdk-ios/1.0.0/SCGateway.framework.zip
   #"https://gitlab.com/dipanjan.jana/dummy/uploads/04b1eb4052706112d6ef533a1edbe330/Archive.zip"
   
@@ -147,7 +147,7 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "Mixpanel-swift"
+  spec.dependency "Mixpanel-swift", "4.0.2"
 
 end
 
