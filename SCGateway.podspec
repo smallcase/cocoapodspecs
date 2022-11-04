@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 
-  version = "1.0.8"
+  version = sdkversion
   spec.name         = "SCGateway"
   spec.version      = "#{version}"
   spec.summary      = "Setup smallcase Gateway iOS SDK to allow your users to transact in stocks, ETFs & smallcases, and much more"
