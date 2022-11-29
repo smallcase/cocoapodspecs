@@ -15,8 +15,8 @@ Pod::Spec.new do |spec|
   
   spec.vendored_framework = 'SCGateway.xcframework'
 
-  spec.source ={ :http => "https://gateway.smallcase.com/scgateway_mixpanel/#{version}/SCGateway.xcframework.zip"}  
+  spec.source ={ :http => "https://gateway.smallcase.com/scdk_ios_xcode_12/#{version}/SCGateway.xcframework.zip"}  
   
-  spec.dependency "Mixpanel-swift", "3.3.0"
+  #spec.dependency "Mixpanel-swift", "3.3.0"
 
 end
